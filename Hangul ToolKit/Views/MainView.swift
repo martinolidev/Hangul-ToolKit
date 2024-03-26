@@ -10,11 +10,25 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         VStack {
-            Text("Main View")
+            GroupBox {
+                VStack {
+                    HStack {
+                        Image(systemName: "arrow.uturn.down.square")
+                        Text("안녕하세요")
+                        Image(systemName: "arrow.uturn.left.square")
+                    }
+                    .font(.title)
+                    
+                    HStack {
+                        Text("annyeonghaseyo")
+                    }
+                    .font(.title)
+                }
+            }
         }
     }
 }
 
 #Preview {
-    MainView()
+    ContentView()
 }
