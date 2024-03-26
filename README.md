@@ -1,4 +1,5 @@
-![presentation](https://github.com/martinolidev/Hangul-ToolKit/assets/149841273/6d9d06b8-3f25-4e4c-91bb-7437e449d8cf)
+
+![presentation](https://github.com/martinolidev/Hangul-ToolKit/assets/149841273/206b6b9a-984e-42d2-9d04-9c017674469e)
 
 # Korean Pronunciation App
 
