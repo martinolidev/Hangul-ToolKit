@@ -17,7 +17,7 @@ struct MainView: View {
         VStack {
             Image("Transformer")
                 .resizable()
-                .frame(width: 200, height: 200)
+                .frame(width: 300, height: 300)
             
             HStack {
                 Text("Hangul to Latin")
@@ -40,6 +40,7 @@ struct MainView: View {
                     Image(systemName: "arrow.up.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)
+                        .foregroundStyle(.indigo)
                 }
                 
                 Button(action: {
@@ -48,6 +49,7 @@ struct MainView: View {
                     Image(systemName: "waveform.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)
+                        .foregroundStyle(.indigo)
                 }
             }.padding(.horizontal)
             
