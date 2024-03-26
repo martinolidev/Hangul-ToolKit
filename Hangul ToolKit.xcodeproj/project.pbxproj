@@ -14,6 +14,7 @@
 		88B6C2C22BB2627800850405 /* Hangul_ToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2C12BB2627800850405 /* Hangul_ToolKitTests.swift */; };
 		88B6C2CC2BB2627800850405 /* Hangul_ToolKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2CB2BB2627800850405 /* Hangul_ToolKitUITests.swift */; };
 		88B6C2CE2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2CD2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift */; };
+		88B6C2DC2BB2630300850405 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2DB2BB2630300850405 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		88B6C2C72BB2627800850405 /* Hangul ToolKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hangul ToolKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6C2CB2BB2627800850405 /* Hangul_ToolKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitUITests.swift; sourceTree = "<group>"; };
 		88B6C2CD2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88B6C2DB2BB2630300850405 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		88B6C2AF2BB2627600850405 /* Hangul ToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				88B6C2DA2BB262F000850405 /* Views */,
 				88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */,
 				88B6C2B22BB2627600850405 /* ContentView.swift */,
 				88B6C2B42BB2627800850405 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				88B6C2CD2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift */,
 			);
 			path = "Hangul ToolKitUITests";
+			sourceTree = "<group>";
+		};
+		88B6C2DA2BB262F000850405 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88B6C2DB2BB2630300850405 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88B6C2B32BB2627600850405 /* ContentView.swift in Sources */,
+				88B6C2DC2BB2630300850405 /* MainView.swift in Sources */,
 				88B6C2B12BB2627600850405 /* Hangul_ToolKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
