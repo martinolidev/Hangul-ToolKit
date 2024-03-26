@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var input: String = "Transform korean"
-    @State private var latin: String = "to latin equivalent"
+    @State private var input: String = ""
+    @State private var latin: String = ""
     
     var body: some View {
         VStack {
@@ -37,6 +37,27 @@ struct MainView: View {
                         .frame(width: 30, height: 30)
                 }
             }.padding(.horizontal)
+            
+            HStack(spacing: 100) {
+                VStack(spacing: 20) {
+                    Text("Hangul")
+                        .font(.title3)
+                        .bold()
+                    Text(input)
+                        .bold()
+                }
+                
+                VStack(spacing: 20) {
+                    Text("Pronunciation")
+                        .font(.title3)
+                        .bold()
+                    Text(latin)
+                        .bold()
+                }
+            }
+            .padding(.top)
+            
+            Spacer()
         }
     }
 }
