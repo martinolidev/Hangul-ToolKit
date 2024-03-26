@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88B6C2B12BB2627600850405 /* Hangul_ToolKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */; };
+		88B6C2B32BB2627600850405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2B22BB2627600850405 /* ContentView.swift */; };
+		88B6C2B52BB2627800850405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B6C2B42BB2627800850405 /* Assets.xcassets */; };
+		88B6C2B82BB2627800850405 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B6C2B72BB2627800850405 /* Preview Assets.xcassets */; };
+		88B6C2C22BB2627800850405 /* Hangul_ToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2C12BB2627800850405 /* Hangul_ToolKitTests.swift */; };
+		88B6C2CC2BB2627800850405 /* Hangul_ToolKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2CB2BB2627800850405 /* Hangul_ToolKitUITests.swift */; };
+		88B6C2CE2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2CD2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88B6C2BE2BB2627800850405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B6C2A52BB2627600850405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B6C2AC2BB2627600850405;
+			remoteInfo = "Hangul ToolKit";
+		};
+		88B6C2C82BB2627800850405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B6C2A52BB2627600850405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B6C2AC2BB2627600850405;
+			remoteInfo = "Hangul ToolKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88B6C2AD2BB2627600850405 /* Hangul ToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hangul ToolKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitApp.swift; sourceTree = "<group>"; };
+		88B6C2B22BB2627600850405 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88B6C2B42BB2627800850405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88B6C2B72BB2627800850405 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88B6C2BD2BB2627800850405 /* Hangul ToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hangul ToolKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B6C2C12BB2627800850405 /* Hangul_ToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitTests.swift; sourceTree = "<group>"; };
+		88B6C2C72BB2627800850405 /* Hangul ToolKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hangul ToolKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B6C2CB2BB2627800850405 /* Hangul_ToolKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitUITests.swift; sourceTree = "<group>"; };
+		88B6C2CD2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88B6C2AA2BB2627600850405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B6C2BA2BB2627800850405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B6C2C42BB2627800850405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88B6C2A42BB2627600850405 = {
+			isa = PBXGroup;
+			children = (
+				88B6C2AF2BB2627600850405 /* Hangul ToolKit */,
+				88B6C2C02BB2627800850405 /* Hangul ToolKitTests */,
+				88B6C2CA2BB2627800850405 /* Hangul ToolKitUITests */,
+				88B6C2AE2BB2627600850405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88B6C2AE2BB2627600850405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88B6C2AD2BB2627600850405 /* Hangul ToolKit.app */,
+				88B6C2BD2BB2627800850405 /* Hangul ToolKitTests.xctest */,
+				88B6C2C72BB2627800850405 /* Hangul ToolKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88B6C2AF2BB2627600850405 /* Hangul ToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */,
+				88B6C2B22BB2627600850405 /* ContentView.swift */,
+				88B6C2B42BB2627800850405 /* Assets.xcassets */,
+				88B6C2B62BB2627800850405 /* Preview Content */,
+			);
+			path = "Hangul ToolKit";
+			sourceTree = "<group>";
+		};
+		88B6C2B62BB2627800850405 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88B6C2B72BB2627800850405 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88B6C2C02BB2627800850405 /* Hangul ToolKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				88B6C2C12BB2627800850405 /* Hangul_ToolKitTests.swift */,
+			);
+			path = "Hangul ToolKitTests";
+			sourceTree = "<group>";
+		};
+		88B6C2CA2BB2627800850405 /* Hangul ToolKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88B6C2CB2BB2627800850405 /* Hangul_ToolKitUITests.swift */,
+				88B6C2CD2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift */,
+			);
+			path = "Hangul ToolKitUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88B6C2AC2BB2627600850405 /* Hangul ToolKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B6C2D12BB2627800850405 /* Build configuration list for PBXNativeTarget "Hangul ToolKit" */;
+			buildPhases = (
+				88B6C2A92BB2627600850405 /* Sources */,
+				88B6C2AA2BB2627600850405 /* Frameworks */,
+				88B6C2AB2BB2627600850405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hangul ToolKit";
+			productName = "Hangul ToolKit";
+			productReference = 88B6C2AD2BB2627600850405 /* Hangul ToolKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88B6C2BC2BB2627800850405 /* Hangul ToolKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B6C2D42BB2627800850405 /* Build configuration list for PBXNativeTarget "Hangul ToolKitTests" */;
+			buildPhases = (
+				88B6C2B92BB2627800850405 /* Sources */,
+				88B6C2BA2BB2627800850405 /* Frameworks */,
+				88B6C2BB2BB2627800850405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B6C2BF2BB2627800850405 /* PBXTargetDependency */,
+			);
+			name = "Hangul ToolKitTests";
+			productName = "Hangul ToolKitTests";
+			productReference = 88B6C2BD2BB2627800850405 /* Hangul ToolKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88B6C2C62BB2627800850405 /* Hangul ToolKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B6C2D72BB2627800850405 /* Build configuration list for PBXNativeTarget "Hangul ToolKitUITests" */;
+			buildPhases = (
+				88B6C2C32BB2627800850405 /* Sources */,
+				88B6C2C42BB2627800850405 /* Frameworks */,
+				88B6C2C52BB2627800850405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B6C2C92BB2627800850405 /* PBXTargetDependency */,
+			);
+			name = "Hangul ToolKitUITests";
+			productName = "Hangul ToolKitUITests";
+			productReference = 88B6C2C72BB2627800850405 /* Hangul ToolKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88B6C2A52BB2627600850405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					88B6C2AC2BB2627600850405 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					88B6C2BC2BB2627800850405 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 88B6C2AC2BB2627600850405;
+					};
+					88B6C2C62BB2627800850405 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 88B6C2AC2BB2627600850405;
+					};
+				};
+			};
+			buildConfigurationList = 88B6C2A82BB2627600850405 /* Build configuration list for PBXProject "Hangul ToolKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88B6C2A42BB2627600850405;
+			productRefGroup = 88B6C2AE2BB2627600850405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88B6C2AC2BB2627600850405 /* Hangul ToolKit */,
+				88B6C2BC2BB2627800850405 /* Hangul ToolKitTests */,
+				88B6C2C62BB2627800850405 /* Hangul ToolKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88B6C2AB2BB2627600850405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B6C2B82BB2627800850405 /* Preview Assets.xcassets in Resources */,
+				88B6C2B52BB2627800850405 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B6C2BB2BB2627800850405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B6C2C52BB2627800850405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88B6C2A92BB2627600850405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B6C2B32BB2627600850405 /* ContentView.swift in Sources */,
+				88B6C2B12BB2627600850405 /* Hangul_ToolKitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B6C2B92BB2627800850405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B6C2C22BB2627800850405 /* Hangul_ToolKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B6C2C32BB2627800850405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B6C2CE2BB2627800850405 /* Hangul_ToolKitUITestsLaunchTests.swift in Sources */,
+				88B6C2CC2BB2627800850405 /* Hangul_ToolKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88B6C2BF2BB2627800850405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B6C2AC2BB2627600850405 /* Hangul ToolKit */;
+			targetProxy = 88B6C2BE2BB2627800850405 /* PBXContainerItemProxy */;
+		};
+		88B6C2C92BB2627800850405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B6C2AC2BB2627600850405 /* Hangul ToolKit */;
+			targetProxy = 88B6C2C82BB2627800850405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88B6C2CF2BB2627800850405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88B6C2D02BB2627800850405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88B6C2D22BB2627800850405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hangul ToolKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 43QD2WB92F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martinoli.Hangul-ToolKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88B6C2D32BB2627800850405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hangul ToolKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 43QD2WB92F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martinoli.Hangul-ToolKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88B6C2D52BB2627800850405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43QD2WB92F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martinoli.Hangul-ToolKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangul ToolKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hangul ToolKit";
+			};
+			name = Debug;
+		};
+		88B6C2D62BB2627800850405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43QD2WB92F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martinoli.Hangul-ToolKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangul ToolKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hangul ToolKit";
+			};
+			name = Release;
+		};
+		88B6C2D82BB2627800850405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43QD2WB92F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martinoli.Hangul-ToolKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hangul ToolKit";
+			};
+			name = Debug;
+		};
+		88B6C2D92BB2627800850405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43QD2WB92F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martinoli.Hangul-ToolKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hangul ToolKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88B6C2A82BB2627600850405 /* Build configuration list for PBXProject "Hangul ToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B6C2CF2BB2627800850405 /* Debug */,
+				88B6C2D02BB2627800850405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B6C2D12BB2627800850405 /* Build configuration list for PBXNativeTarget "Hangul ToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B6C2D22BB2627800850405 /* Debug */,
+				88B6C2D32BB2627800850405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B6C2D42BB2627800850405 /* Build configuration list for PBXNativeTarget "Hangul ToolKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B6C2D52BB2627800850405 /* Debug */,
+				88B6C2D62BB2627800850405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B6C2D72BB2627800850405 /* Build configuration list for PBXNativeTarget "Hangul ToolKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B6C2D82BB2627800850405 /* Debug */,
+				88B6C2D92BB2627800850405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88B6C2A52BB2627600850405 /* Project object */;
+}
