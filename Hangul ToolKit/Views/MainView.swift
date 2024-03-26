@@ -71,12 +71,19 @@ struct MainView: View {
             .padding(.top)
             
             Spacer()
+            Section {
+                
+            } footer: {
+                Text("Make sure you installed the Korean keyboard")
+                    .foregroundStyle(.gray)
+                    .font(.caption)
+            }
         }
     }
     
     func textToSpeech(text: String) {
-        var utterance = AVSpeechUtterance(string: text)
-        var voice = AVSpeechSynthesisVoice(language: "ko-KR")
+        let utterance = AVSpeechUtterance(string: text)
+        let voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.voice = voice
         speech = AVSpeechSynthesizer()
         speech?.speak(utterance)
