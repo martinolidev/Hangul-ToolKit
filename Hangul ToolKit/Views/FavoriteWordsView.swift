@@ -18,11 +18,14 @@ struct FavoriteWordsView: View {
                 ForEach(words) { word in
                     HStack {
                         Text(word.koreanWord)
+                            .bold()
+                        Spacer()
                         Text(word.latinWord)
+                        Spacer()
                         Text(word.date)
                     }
                 }
-            }
+            }.listStyle(PlainListStyle())
         }.navigationTitle("Favorite Words")
     }
 }
