@@ -19,7 +19,7 @@ struct FavoriteWordsView: View {
                     HStack {
                         Text(word.koreanWord)
                         Text(word.latinWord)
-                        Text("\(word.date)")
+                        Text(word.date)
                     }
                 }
             }

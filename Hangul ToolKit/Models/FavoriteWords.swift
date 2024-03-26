@@ -13,12 +13,19 @@ import SwiftData
 class FavoriteWords {
     
     init(date: Date, koreanWord: String, latinWord: String) {
-        self.date = date
+        self.date = Self.dateWithoutTime(from: date)
         self.koreanWord = koreanWord
         self.latinWord = latinWord
     }
     
-    var date: Date
+    var date: String
     var koreanWord: String
     var latinWord: String
+    
+    static func dateWithoutTime(from date: Date) -> String {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            return formatter.string(from: date)
+    }
 }
