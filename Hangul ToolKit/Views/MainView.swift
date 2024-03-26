@@ -39,14 +39,6 @@ struct MainView: View {
                 
                 Button(action: {
                     latin = input.applyingTransform(.toLatin, reverse: false) ?? ""
-                }) {
-                    Image(systemName: "arrow.up.circle.fill")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .foregroundStyle(.indigo)
-                }
-                
-                Button(action: {
                     textToSpeech(text: input)
                 }) {
                     Image(systemName: "waveform.circle.fill")
