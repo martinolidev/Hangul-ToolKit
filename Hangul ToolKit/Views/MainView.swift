@@ -28,7 +28,7 @@ struct MainView: View {
                     .bold()
                 Spacer()
                 Button("Add to your favorites") {
-                    
+                    addToFavorite(korean: input, latin: latin)
                 }.foregroundStyle(.indigo)
             }.padding()
             
