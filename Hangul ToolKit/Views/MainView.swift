@@ -11,6 +11,7 @@ import AVFoundation
 struct MainView: View {
     @State private var input: String = ""
     @State private var latin: String = ""
+    @State private var speech: AVSpeechSynthesizer?
     
     var body: some View {
         VStack {
@@ -42,7 +43,7 @@ struct MainView: View {
                 }
                 
                 Button(action: {
-                    speakText(text: input)
+                    textToSpeech(text: latin)
                 }) {
                     Image(systemName: "waveform.circle.fill")
                         .resizable()
@@ -73,12 +74,12 @@ struct MainView: View {
         }
     }
     
-    func speakText(text: String) {
-            let utterance = AVSpeechUtterance(string: text)
-            utterance.voice = AVSpeechSynthesisVoice(language: "kr-KR")
-
-            let synthesizer = AVSpeechSynthesizer()
-            synthesizer.speak(utterance)
+    func textToSpeech(text: String) {
+        var utterance = AVSpeechUtterance(string: text)
+        var voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance.voice = voice
+        speech = AVSpeechSynthesizer()
+        speech?.speak(utterance)
     }
 }
 
