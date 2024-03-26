@@ -8,23 +8,40 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var input: String = "Transform korean"
+    @State private var latin: String = "to latin equivalent"
+    
     var body: some View {
         VStack {
             GroupBox {
                 VStack {
                     HStack {
                         Image(systemName: "arrow.uturn.down.square")
-                        Text("안녕하세요")
+                        Text(input)
                         Image(systemName: "arrow.uturn.left.square")
                     }
                     .font(.title)
                     
                     HStack {
-                        Text("annyeonghaseyo")
+                        Text(latin)
                     }
                     .font(.title)
-                }
+                }.padding()
             }
+            
+            HStack {
+                TextField("Type a korean word", text: $input)
+                    .padding(.top)
+                    .frame(height: 30)
+                
+                Button(action: {
+                    latin = input.applyingTransform(.toLatin, reverse: false) ?? ""
+                }) {
+                    Image(systemName: "arrow.up.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }
+            }.padding(.top)
         }
     }
 }
