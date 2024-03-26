@@ -7,11 +7,14 @@
 
 import SwiftUI
 import AVFoundation
+import SwiftData
 
 struct MainView: View {
     @State private var input: String = ""
     @State private var latin: String = ""
     @State private var speech: AVSpeechSynthesizer?
+    
+    @Environment(\.modelContext) private var context
     
     var body: some View {
         VStack {
@@ -24,8 +27,8 @@ struct MainView: View {
                     .font(.title2)
                     .bold()
                 Spacer()
-                Button("Add to your library") {
-                    //code logic here
+                Button("Add to your favorites") {
+                    
                 }.foregroundStyle(.indigo)
             }.padding()
             
@@ -89,6 +92,12 @@ struct MainView: View {
         utterance.voice = voice
         speech = AVSpeechSynthesizer()
         speech?.speak(utterance)
+    }
+    
+    func addToFavorite(korean: String, latin: String) {
+        //create data
+        let data = FavoriteWords(date: Date(), koreanWord: korean, latinWord: latin)
+        context.insert(data)
     }
 }
 
