@@ -18,7 +18,10 @@ struct ContentView: View {
                     }
                     
                     ToolbarItem {
-                        Image(systemName: "star.fill")
+                        NavigationLink(destination: FavoriteWordsView()) {
+                            Image(systemName: "star.fill")
+                                .foregroundStyle(.indigo)
+                        }
                     }
                 }
         }
