@@ -43,7 +43,7 @@ struct MainView: View {
                 }
                 
                 Button(action: {
-                    textToSpeech(text: latin)
+                    textToSpeech(text: input)
                 }) {
                     Image(systemName: "waveform.circle.fill")
                         .resizable()
@@ -76,7 +76,7 @@ struct MainView: View {
     
     func textToSpeech(text: String) {
         var utterance = AVSpeechUtterance(string: text)
-        var voice = AVSpeechSynthesisVoice(language: "en-US")
+        var voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.voice = voice
         speech = AVSpeechSynthesizer()
         speech?.speak(utterance)
