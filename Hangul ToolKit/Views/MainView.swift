@@ -13,21 +13,16 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            GroupBox {
-                VStack {
-                    HStack {
-                        Image(systemName: "arrow.uturn.down.square")
-                        Text(input)
-                        Image(systemName: "arrow.uturn.left.square")
-                    }
-                    .font(.title)
-                    
-                    HStack {
-                        Text(latin)
-                    }
-                    .font(.title)
-                }.padding()
-            }
+            Image("Transformer")
+                .resizable()
+                .frame(width: 200, height: 200)
+            
+            HStack {
+                Text("Hangul to Latin")
+                    .font(.title2)
+                    .bold()
+                Spacer()
+            }.padding()
             
             HStack {
                 TextField("Type a korean word", text: $input)
@@ -41,7 +36,7 @@ struct MainView: View {
                         .resizable()
                         .frame(width: 30, height: 30)
                 }
-            }.padding(.top)
+            }.padding(.horizontal)
         }
     }
 }

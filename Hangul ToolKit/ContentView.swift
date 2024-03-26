@@ -11,7 +11,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             MainView()
-                .padding()
                 .navigationTitle("Hangul ToolKit")
                 .toolbar {
                     ToolbarItem {
