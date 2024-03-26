@@ -24,7 +24,7 @@ struct MainView: View {
                 Spacer()
                 Button("Add to your library") {
                     //code logic here
-                }
+                }.foregroundStyle(.indigo)
             }.padding()
             
             HStack {
