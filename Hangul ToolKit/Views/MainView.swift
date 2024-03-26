@@ -22,6 +22,9 @@ struct MainView: View {
                     .font(.title2)
                     .bold()
                 Spacer()
+                Button("Add to your library") {
+                    //code logic here
+                }
             }.padding()
             
             HStack {
