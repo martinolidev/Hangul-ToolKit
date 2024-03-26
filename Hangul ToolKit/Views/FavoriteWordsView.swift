@@ -25,8 +25,17 @@ struct FavoriteWordsView: View {
                         Text(word.date)
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    for index in indexSet {
+                        deleteWord(words[index])
+                    }
+                })
             }.listStyle(PlainListStyle())
         }.navigationTitle("Favorite Words")
+    }
+    
+    func deleteWord(_ item: FavoriteWords) {
+        context.delete(item)
     }
 }
 
