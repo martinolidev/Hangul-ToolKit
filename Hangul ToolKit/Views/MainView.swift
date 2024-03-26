@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct MainView: View {
     @State private var input: String = ""
@@ -39,6 +40,14 @@ struct MainView: View {
                         .resizable()
                         .frame(width: 30, height: 30)
                 }
+                
+                Button(action: {
+                    speakText(text: input)
+                }) {
+                    Image(systemName: "waveform.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }
             }.padding(.horizontal)
             
             HStack(spacing: 100) {
@@ -62,6 +71,14 @@ struct MainView: View {
             
             Spacer()
         }
+    }
+    
+    func speakText(text: String) {
+            let utterance = AVSpeechUtterance(string: text)
+            utterance.voice = AVSpeechSynthesisVoice(language: "kr-KR")
+
+            let synthesizer = AVSpeechSynthesizer()
+            synthesizer.speak(utterance)
     }
 }
 
