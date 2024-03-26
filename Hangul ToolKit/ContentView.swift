@@ -16,6 +16,10 @@ struct ContentView: View {
                     ToolbarItem {
                         Image(systemName: "slider.horizontal.3")
                     }
+                    
+                    ToolbarItem {
+                        Image(systemName: "star.fill")
+                    }
                 }
         }
     }
