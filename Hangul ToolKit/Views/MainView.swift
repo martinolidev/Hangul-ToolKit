@@ -91,14 +91,7 @@ struct MainView: View {
                     requestPermissionForSpeech()
                 }
             } else {
-                Button {
-                    //code logic here
-                } label: {
-                    Image(systemName: "waveform.badge.mic")
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                        .foregroundStyle(.indigo)
-                }
+                SpeechView()
             }
             
             Spacer()
