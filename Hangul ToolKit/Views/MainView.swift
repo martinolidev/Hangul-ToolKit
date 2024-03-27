@@ -30,7 +30,11 @@ struct MainView: View {
                     .bold()
                 Spacer()
                 Button("Add to your favorites") {
-                    addToFavorite(korean: input, latin: latin)
+                    if input.isEmpty {
+                        showAlert = true
+                    } else {
+                        addToFavorite(korean: input, latin: latin)
+                    }
                 }.foregroundStyle(.indigo)
             }.padding()
             
@@ -40,7 +44,7 @@ struct MainView: View {
                     .frame(height: 30)
                 
                 Button(action: {
-                    if input == "" {
+                    if input.isEmpty {
                         showAlert = true
                     } else {
                         latin = input.applyingTransform(.toLatin, reverse: false) ?? ""
