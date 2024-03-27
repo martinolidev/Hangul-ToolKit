@@ -20,7 +20,8 @@ struct MainView: View {
         VStack {
             Image("Transformer")
                 .resizable()
-                .frame(width: 300, height: 300)
+                .frame(width: 180, height: 180)
+                .padding()
             
             HStack {
                 Text("Hangul to Latin")
