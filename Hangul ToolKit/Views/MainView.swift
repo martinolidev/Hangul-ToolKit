@@ -117,23 +117,6 @@ struct MainView: View {
         let data = FavoriteWords(date: Date(), koreanWord: korean, latinWord: latin)
         context.insert(data)
     }
-    
-    func requestPermissionForSpeech() {
-        SFSpeechRecognizer.requestAuthorization { authStatus in
-            DispatchQueue.main.async {
-                switch authStatus {
-                case .authorized:
-                    isPermissionGranted.toggle()
-                case .denied:
-                    isPermissionGranted = false
-                case .restricted, .notDetermined:
-                    isPermissionGranted = false
-                @unknown default:
-                    isPermissionGranted = false
-                }
-            }
-        }
-    }
 }
 
 #Preview {
