@@ -8,6 +8,8 @@
 import SwiftUI
 import AVFoundation
 import SwiftData
+import Speech
+
 
 struct MainView: View {
     @State private var input: String = ""
@@ -80,6 +82,18 @@ struct MainView: View {
                 }
             }
             .padding(.top)
+            
+            Spacer()
+            
+            Button {
+                // code logic here
+            } label: {
+                Image(systemName: "waveform.badge.mic")
+                    .resizable()
+                    .foregroundStyle(.indigo)
+                    .frame(width: 100, height: 100)
+                    
+            }
             
             Spacer()
             Section {
