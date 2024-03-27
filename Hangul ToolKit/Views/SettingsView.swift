@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var speechRate = 0.5
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Section {
+                Text("Speech Rate")
+                    .font(.headline)
+                Slider(value: $speechRate, in: 0...1, step: 0.1)
+                    .padding()
+                Text(String(format: "%.1f", speechRate))
+            }
+        }
+        .padding()
+        .navigationTitle("Settings")
     }
 }
 
 #Preview {
-    SettingsView()
+    ContentView()
 }

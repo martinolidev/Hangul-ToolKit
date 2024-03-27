@@ -16,6 +16,7 @@ struct ContentView: View {
                     ToolbarItem {
                         NavigationLink(destination: SettingsView()) {
                             Image(systemName: "slider.horizontal.3")
+                                .foregroundStyle(.indigo)
                         }
                     }
                     
