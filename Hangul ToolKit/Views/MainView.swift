@@ -92,7 +92,7 @@ struct MainView: View {
         }.toolbar {
             ToolbarItem {
                 NavigationLink(destination: SettingsView(speech: speechSettings)) {
-                    Image(systemName: "slider.horizontal.3")
+                    Image(systemName: "gearshape.fill")
                         .foregroundStyle(.indigo)
                 }
             }
