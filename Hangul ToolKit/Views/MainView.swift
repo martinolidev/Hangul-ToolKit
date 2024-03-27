@@ -17,7 +17,7 @@ struct MainView: View {
     @State private var speech: AVSpeechSynthesizer?
     @State private var showAlert: Bool = false
     @ObservedObject var speechSettings = SpeechSettings()
-    @AppStorage("isPermissionGranted") private var isPermissionGranted: Bool = false
+
     
     @Environment(\.modelContext) private var context
     
@@ -84,15 +84,6 @@ struct MainView: View {
             }
             .padding(.top)
             
-            Spacer()
-            
-            if isPermissionGranted == false {
-                Button("Permission for speech to text") {
-                    requestPermissionForSpeech()
-                }
-            } else {
-                SpeechView()
-            }
             
             Spacer()
             Section {
