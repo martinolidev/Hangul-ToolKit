@@ -14,23 +14,34 @@ struct FavoriteWordsView: View {
     
     var body: some View {
         VStack {
-            List {
-                ForEach(words) { word in
-                    HStack {
-                        Text(word.koreanWord)
-                            .bold()
-                        Spacer()
-                        Text(word.latinWord)
-                        Spacer()
-                        Text(word.date)
+            
+            if words.isEmpty {
+                Image(systemName: "plus.square.on.square")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .foregroundStyle(.indigo)
+                Text("Add some words!")
+                    .foregroundStyle(.gray)
+                    .font(.headline)
+            } else {
+                List {
+                    ForEach(words) { word in
+                        HStack {
+                            Text(word.koreanWord)
+                                .bold()
+                            Spacer()
+                            Text(word.latinWord)
+                            Spacer()
+                            Text(word.date)
+                        }
                     }
-                }
-                .onDelete(perform: { indexSet in
-                    for index in indexSet {
-                        deleteWord(words[index])
-                    }
-                })
-            }.listStyle(PlainListStyle())
+                    .onDelete(perform: { indexSet in
+                        for index in indexSet {
+                            deleteWord(words[index])
+                        }
+                    })
+                }.listStyle(PlainListStyle())
+            }
         }.navigationTitle("Favorite Words")
     }
     
