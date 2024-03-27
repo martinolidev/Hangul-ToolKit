@@ -17,6 +17,7 @@ struct MainView: View {
     @State private var speech: AVSpeechSynthesizer?
     @State private var showAlert: Bool = false
     @ObservedObject var speechSettings = SpeechSettings()
+    @AppStorage("isPermissionGranted") private var isPermissionGranted: Bool = false
     
     @Environment(\.modelContext) private var context
     
@@ -83,16 +84,19 @@ struct MainView: View {
             }
             .padding(.top)
             
-            Spacer()
-            
-            Button {
-                // code logic here
-            } label: {
-                Image(systemName: "waveform.badge.mic")
-                    .resizable()
-                    .foregroundStyle(.indigo)
-                    .frame(width: 100, height: 100)
-                    
+            if isPermissionGranted == false {
+                Button("Permission for speech to text") {
+                    requestPermissionForSpeech()
+                }
+            } else {
+                Button {
+                    //code logic here
+                } label: {
+                    Image(systemName: "waveform.badge.mic")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .foregroundStyle(.indigo)
+                }
             }
             
             Spacer()
@@ -126,6 +130,23 @@ struct MainView: View {
         //create data
         let data = FavoriteWords(date: Date(), koreanWord: korean, latinWord: latin)
         context.insert(data)
+    }
+    
+    func requestPermissionForSpeech() {
+        SFSpeechRecognizer.requestAuthorization { authStatus in
+            DispatchQueue.main.async {
+                switch authStatus {
+                case .authorized:
+                    isPermissionGranted.toggle()
+                case .denied:
+                    isPermissionGranted = false
+                case .restricted, .notDetermined:
+                    isPermissionGranted = false
+                @unknown default:
+                    isPermissionGranted = false
+                }
+            }
+        }
     }
 }
 

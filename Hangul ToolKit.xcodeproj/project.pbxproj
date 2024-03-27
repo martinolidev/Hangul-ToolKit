@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		887340092BB4B3BC00DA5987 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8873400C2BB4CA8C00DA5987 /* Hangul-ToolKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hangul-ToolKit-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88B6C2AD2BB2627600850405 /* Hangul ToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hangul ToolKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitApp.swift; sourceTree = "<group>"; };
 		88B6C2B22BB2627600850405 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		88B6C2AF2BB2627600850405 /* Hangul ToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				8873400C2BB4CA8C00DA5987 /* Hangul-ToolKit-Info.plist */,
 				88B6C2DD2BB27D7E00850405 /* Models */,
 				88B6C2DA2BB262F000850405 /* Views */,
 				88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */,
@@ -457,6 +459,7 @@
 				DEVELOPMENT_TEAM = 43QD2WB92F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hangul-ToolKit-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +493,7 @@
 				DEVELOPMENT_TEAM = 43QD2WB92F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hangul-ToolKit-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
