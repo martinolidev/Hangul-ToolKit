@@ -17,11 +17,14 @@ struct SettingsView: View {
                     .font(.headline)
                 Slider(value: $speechRate, in: 0...1, step: 0.1)
                     .padding()
+                    .accentColor(.indigo)
                 Text(String(format: "%.1f", speechRate))
             }
+            Spacer()
         }
         .padding()
         .navigationTitle("Settings")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
