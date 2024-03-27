@@ -84,6 +84,8 @@ struct MainView: View {
             }
             .padding(.top)
             
+            Spacer()
+            
             if isPermissionGranted == false {
                 Button("Permission for speech to text") {
                     requestPermissionForSpeech()
