@@ -14,6 +14,7 @@ struct MainView: View {
     @State private var latin: String = ""
     @State private var speech: AVSpeechSynthesizer?
     @State private var showAlert: Bool = false
+    @ObservedObject var speechSettings = SpeechSettings()
     
     @Environment(\.modelContext) private var context
     
@@ -88,6 +89,13 @@ struct MainView: View {
                     .foregroundStyle(.gray)
                     .font(.caption)
             }
+        }.toolbar {
+            ToolbarItem {
+                NavigationLink(destination: SettingsView(speech: speechSettings)) {
+                    Image(systemName: "slider.horizontal.3")
+                        .foregroundStyle(.indigo)
+                }
+            }
         }
     }
     
@@ -95,7 +103,7 @@ struct MainView: View {
         let utterance = AVSpeechUtterance(string: text)
         let voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.voice = voice
-        utterance.rate = 0.5
+        utterance.rate = Float(speechSettings.speechRate)
         speech = AVSpeechSynthesizer()
         speech?.speak(utterance)
     }

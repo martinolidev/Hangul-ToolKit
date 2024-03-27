@@ -14,13 +14,6 @@ struct ContentView: View {
                 .navigationTitle("Hangul Tool Kit")
                 .toolbar {
                     ToolbarItem {
-                        NavigationLink(destination: SettingsView()) {
-                            Image(systemName: "slider.horizontal.3")
-                                .foregroundStyle(.indigo)
-                        }
-                    }
-                    
-                    ToolbarItem {
                         NavigationLink(destination: FavoriteWordsView()) {
                             Image(systemName: "star.fill")
                                 .foregroundStyle(.indigo)
