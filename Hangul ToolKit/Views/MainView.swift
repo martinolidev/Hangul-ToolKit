@@ -95,6 +95,7 @@ struct MainView: View {
         let utterance = AVSpeechUtterance(string: text)
         let voice = AVSpeechSynthesisVoice(language: "ko-KR")
         utterance.voice = voice
+        utterance.rate = 0.5
         speech = AVSpeechSynthesizer()
         speech?.speak(utterance)
     }
