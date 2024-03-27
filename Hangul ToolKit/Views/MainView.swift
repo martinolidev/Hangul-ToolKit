@@ -13,6 +13,7 @@ struct MainView: View {
     @State private var input: String = ""
     @State private var latin: String = ""
     @State private var speech: AVSpeechSynthesizer?
+    @State private var showAlert: Bool = false
     
     @Environment(\.modelContext) private var context
     
@@ -39,13 +40,20 @@ struct MainView: View {
                     .frame(height: 30)
                 
                 Button(action: {
-                    latin = input.applyingTransform(.toLatin, reverse: false) ?? ""
-                    textToSpeech(text: input)
+                    if input == "" {
+                        showAlert = true
+                    } else {
+                        latin = input.applyingTransform(.toLatin, reverse: false) ?? ""
+                        textToSpeech(text: input)
+                    }
                 }) {
                     Image(systemName: "waveform.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .foregroundStyle(.indigo)
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Empty field"), message: Text("Type a korean word"), dismissButton: .default(Text("Ok")))
                 }
             }.padding(.horizontal)
             
