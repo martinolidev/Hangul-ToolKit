@@ -13,6 +13,11 @@ struct ContentView: View {
             MainView()
                 .navigationTitle("Hangul Tool Kit")
                 .toolbar {
+                    ToolbarItem {
+                        NavigationLink(destination: SettingsView()) {
+                            Image(systemName: "slider.horizontal.3")
+                        }
+                    }
                     
                     ToolbarItem {
                         NavigationLink(destination: FavoriteWordsView()) {

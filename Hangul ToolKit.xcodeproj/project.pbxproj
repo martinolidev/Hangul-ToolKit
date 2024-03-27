@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8873400A2BB4B3BC00DA5987 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887340092BB4B3BC00DA5987 /* SettingsView.swift */; };
 		88B6C2B12BB2627600850405 /* Hangul_ToolKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */; };
 		88B6C2B32BB2627600850405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6C2B22BB2627600850405 /* ContentView.swift */; };
 		88B6C2B52BB2627800850405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B6C2B42BB2627800850405 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		887340092BB4B3BC00DA5987 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		88B6C2AD2BB2627600850405 /* Hangul ToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hangul ToolKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6C2B02BB2627600850405 /* Hangul_ToolKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul_ToolKitApp.swift; sourceTree = "<group>"; };
 		88B6C2B22BB2627600850405 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				88B6C2DB2BB2630300850405 /* MainView.swift */,
 				88B6C2E02BB27E5500850405 /* FavoriteWordsView.swift */,
+				887340092BB4B3BC00DA5987 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				88B6C2B32BB2627600850405 /* ContentView.swift in Sources */,
 				88B6C2DF2BB27D8E00850405 /* FavoriteWords.swift in Sources */,
 				88B6C2DC2BB2630300850405 /* MainView.swift in Sources */,
+				8873400A2BB4B3BC00DA5987 /* SettingsView.swift in Sources */,
 				88B6C2E12BB27E5500850405 /* FavoriteWordsView.swift in Sources */,
 				88B6C2B12BB2627600850405 /* Hangul_ToolKitApp.swift in Sources */,
 			);
