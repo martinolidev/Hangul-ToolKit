@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             MainView()
-                .navigationTitle("Hangul Tool Kit")
+                .navigationTitle("Hangul Helper")
                 .toolbar {
                     ToolbarItem {
                         NavigationLink(destination: FavoriteWordsView()) {
